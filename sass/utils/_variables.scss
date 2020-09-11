@@ -1,0 +1,59 @@
+/* colors */
+$blue: #2196f3;
+$black: #212121;
+$grey: #757575;
+$white: #ffffff;
+
+/* studio-colors */
+$benefits: #f5f4fa;
+$doing: rgba(47, 48, 58, 0.8);
+$grey-bg: #afb1b8;
+$footer-background: #2f303a;
+$footer-links: rgba(255, 255, 255, 0.1);
+$footer-address: rgba(255, 255, 255, 0.6);
+$footer-subscribe: rgba(255, 255, 255, 0.3);
+
+/* portfolio-colors */
+$ptf-btn: #f5f4fa;
+
+/* transition */
+$animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+/* base-settings */
+.d-flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.rel {
+  position: relative;
+}
+
+.mauto {
+  margin: 0 auto;
+}
+
+.mleft {
+  margin-left: auto;
+}
+
+.mright {
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}

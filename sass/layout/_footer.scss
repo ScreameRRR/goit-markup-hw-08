@@ -1,0 +1,243 @@
+.footer-div-background {
+  padding-top: 56px;
+  padding-bottom: 25px;
+  background: #2f303a;
+  padding-right: 15px;
+  padding-left: 15px;
+  height: 603px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+height: 463px;
+
+  }
+
+    @media screen and (min-width: 1200px){
+      display: flex;
+      align-items: center;
+      height: 252px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+.footer-div-background div {
+  flex-wrap: wrap;
+}
+
+.footer-contacts {
+  flex-direction: column;
+text-align: center;
+  padding-top: 60px;
+   margin-bottom: 60px;
+
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+     margin: 0;
+     padding: 0;
+     margin-left: auto;
+     margin-right: 165px;
+   }
+
+  @media screen and (min-width: 1200px){
+    display: flex;
+    margin-bottom: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: 85px;
+    text-align: left;
+  }
+}
+
+.footer-item {
+  width: 100%;
+}
+
+.logo-white {
+  @extend %logo-text;
+  color: $white;
+}
+
+.address-footer {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $white;
+  padding-top: 20px;
+}
+
+.contacts-footer {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $footer-address;
+  padding-top: 10px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 9px;
+  }
+
+
+}
+
+.footer-socials {
+  display: block;
+  margin: 0;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px){ 
+
+    margin-right: 75px;
+  }
+
+  
+}
+
+.join-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white;
+  margin-bottom: 20px;
+}
+
+.footer-list {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px){ 
+    justify-content: flex-start;
+    margin-bottom: 0;
+    margin-right: 92px;
+  }
+ 
+}
+
+.footer-social-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  height: 44px;
+  width: 44px;
+  background: $footer-links;
+  border-radius: 50%;
+
+  transition: $animation;
+
+  &:hover {
+    background-color: #2196f3;
+    color: #ffffff;
+    border-radius: 50%;
+  }
+}
+
+.footer-social-icon {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.footer-list-icon-container:not(:last-child) {
+  padding-right: 10px;
+}
+
+.mail-subscribe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 1200px){ margin-right: auto;}
+  
+}
+
+.submit {
+  padding-left: 16px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: inherit;
+  margin-right: 12px;
+  color: $white;
+
+  @media screen and (min-width: 1200px) { 
+    padding-left: 16px;
+    width: 358px;
+  
+}
+
+  border: 1px solid $footer-subscribe;
+
+  &:focus {
+    content: "";
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  }
+}
+
+.submit-form {
+
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: 1199px) {
+  
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px){
+    flex-wrap: nowrap; }
+  
+}
+
+.button-subscribe {
+  width: 200px;
+  height: 50px;
+  background: $blue;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: $white;
+  padding-right: 62px;
+  padding-left: 29px;
+  margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+
+  &::after {
+    display: block;
+    content: "";
+    background-image: url(../images/telegram-icon.svg);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 13px;
+    right: 0;
+    transform: translateX(-100%);
+  }
+}
+
+.f-title {
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+
+}

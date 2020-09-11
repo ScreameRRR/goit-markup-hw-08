@@ -1,0 +1,70 @@
+.hidden-section {
+  @media screen and (max-width: 1199px){
+    display: none;
+    
+  }
+}
+
+.flex-container {
+  margin-bottom: 94px;
+}
+
+.title {
+  @extend %sub-title;
+
+  font-weight: bold;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+padding-top: 0;
+
+}
+
+.doing-list {
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.doing-item {
+  width: 370px;
+  height: 294px;
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.doing-img {
+  width: 370px;
+  height: 294px;
+  z-index: -1;
+}
+
+.doing-text {
+  position: absolute;
+  z-index: 1;
+  bottom: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.doint-item-container {
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 70px;
+  background-color: $doing;
+}

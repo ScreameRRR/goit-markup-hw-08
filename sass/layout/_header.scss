@@ -1,0 +1,329 @@
+.header {
+    min-height: 60px;
+    margin-bottom: 0px;
+    position: relative;
+    @media screen and (min-width: 768px) {
+      min-height: 80px;
+    }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #ECECEC;
+
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 768px)  {
+    justify-content: space-around;
+  }
+
+}
+
+.nav-logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media screen and (min-width: 768px ) {
+    margin-right: 88px;
+    padding: 26px 0;
+    margin-left: auto;
+  }
+}
+
+.nav-list {
+  
+  @media screen and (min-width: 768px )  {
+    display: flex;
+    padding: 32px 0;
+  }
+}
+
+
+
+
+
+.logo-blue {
+  @extend %logo-text;
+  color: $blue;
+
+
+  @media screen and (max-width: 1199px){
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+}
+
+.logo-black {
+  @extend %logo-text;
+  color: $black;
+
+  @media screen and (max-width: 1199px){
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.nav-menu {
+  display: none;
+  background-color: #fff;
+  z-index: 10;
+  @media screen and (max-width: 767px){
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 60px 0;
+  }
+
+
+
+  @media screen and (min-width: 768px ) {
+    display: flex;
+    height: 80px;
+    margin-right: auto;
+   }
+
+   @media screen and (min-width: 1200px ) {
+    
+   }
+  }
+
+  .is-open {
+    
+
+    @media screen and (max-width: 767px ) {
+      display: block;
+     }
+  
+     @media screen and (min-width: 1200px ) {
+ 
+     }
+  }
+
+  .nav-link {
+    @extend %nav-text;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #212121;
+    @media screen and (min-width: 768px ) {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+
+
+  }
+
+   &:hover,
+   &:focus   {
+     color: $blue;
+     transform: $animation;
+   }
+  }
+
+
+.nav-item {
+    @extend %nav-text;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #212121;
+    text-align: center;
+
+    @media screen and (max-width: 767px ) {
+     &:last-child {
+      margin-bottom: 60px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+   
+  @media screen and (min-width: 768px ) {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    display: flex;
+    padding: 0;
+    color: $black;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+
+    &:last-child {
+      margin-right: 84px;
+    }
+    &:hover {
+      color: $blue;
+      transition: $animation;
+    }
+  }
+
+}
+
+.blue-border {
+  color: $blue;
+  position: relative;
+}
+.blue-border::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: $blue;
+  border-radius: 2px;
+  display: inline-block;
+  top: 29px;
+  left: 0;
+
+  @media screen and (min-width: 768px ) {
+    top: 46px;
+  }
+}
+
+
+.address-item {
+  text-align: center;
+  color: $grey;
+
+
+  
+  @media screen and (max-width: 768px ) {
+   
+
+}
+
+ 
+@media screen and (max-width: 1200px ) {
+  margin: 0;
+}
+}
+.address-list {
+ 
+
+  @media screen and (max-width: 767px ) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 21px 0;
+ 
+   :not(:last-child) {
+    margin-bottom: 16px;
+  }
+  }
+
+@media screen and (min-width: 768px ) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 21px;
+ :not(:last-child) {
+  margin-bottom: 5px;
+}
+
+
+}
+
+@media screen and (min-width: 1200px ) {
+  display: flex;
+  padding-left: 100px;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+ :not(:last-child) {
+   margin: 0;
+  margin-right: 10px;
+}
+}
+
+}
+
+
+
+
+.nav-contacts {
+
+  @media screen and (max-width: 767px ) {
+    position: relative;
+  }
+  
+
+}
+
+.address-link {
+  @extend %nav-text;
+  color: $grey;
+  fill: $grey;
+  padding: 0;
+  margin: 0;
+
+  &:hover {
+    color: $blue;
+    transition: $animation;
+  }
+  font-size: 18px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+  @media screen and (min-width: 768px){
+    font-size: 12px;
+line-height: 14px;
+  }
+}
+
+.nav-icon {
+
+  height: 15px;
+  width: 16px;
+  display: inline-block;
+  fill: inherit;
+  color: inherit;
+  margin-right: 10px;
+
+  
+
+
+  @media screen and (min-width: 768px){
+    height: 14px;
+    width: 13px;
+    margin: 0;
+    margin-right: 2px;
+    &.p1 {
+      left: 600px;
+      top: 48px;
+    }
+  
+    &.p2 {
+      top: 25px;
+      left: 600px;
+    }
+
+   }
+
+  @media screen and (min-width: 1200px){
+    &.p1 {
+      left: 1px;
+      top: -4px;
+    }
+  
+    &.p2 {
+      left: 189px;
+      top: -4px;
+    }
+    }
+
+
+}

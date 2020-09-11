@@ -1,0 +1,109 @@
+.benefits {
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.adv-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: $black;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin: 0px;
+}
+
+.feature-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    margin: -15px;
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $grey;
+    font-weight: 400;
+    margin: 0px;
+  }
+
+  .title {
+    color: $grey;
+    text-transform: uppercase;
+  }
+}
+
+.item-title {
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 15px;
+    width: calc((100% - 8 * 15px) / 4);
+  }
+}
+
+.picture {
+  height: 120px;
+  background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.img1 {
+  background-image: url(../images/sputnik.svg);
+}
+
+.img2 {
+  background-image: url(../images/clock.svg);
+}
+
+.img3 {
+  background-image: url(../images/diagram.svg);
+}
+
+.img4 {
+  background-image: url(../images/astronaut.svg);
+}
